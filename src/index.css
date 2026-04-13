@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --forest: 150 25% 22%;
+    --forest-light: 150 15% 35%;
+    --earth: 35 30% 25%;
+    --warm: 35 40% 95%;
+    --golden: 38 70% 55%;
+    --stone: 30 10% 45%;
+    --text-dark: 0 0% 15%;
+
+    --background: 35 40% 95%;
+    --foreground: 0 0% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+    --primary: 150 25% 22%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 30% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 35 20% 90%;
+    --muted-foreground: 30 10% 45%;
+    --accent: 38 70% 55%;
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 150 25% 22%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: hsl(var(--text-dark));
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    color: hsl(var(--forest));
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; }
+}
+
+@layer components {
+  .hero-dark {
+    background: linear-gradient(180deg, hsl(150 25% 15%) 0%, hsl(150 20% 25%) 100%);
+  }
+
+  .btn-golden {
+    background-color: hsl(var(--golden));
+    color: hsl(var(--text-dark));
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-golden:hover {
+    background-color: hsl(38 70% 48%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+
+  .btn-outline-white {
+    background: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: 2px solid rgba(255,255,255,0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn-outline-white:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #ffffff;
+  }
+
+  .section-pad {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 768px) {
+    .section-pad {
+      padding: 48px 0;
+    }
+  }
+
+  .card-base {
+    background: #ffffff;
+    border: 1px solid hsl(30 15% 88%);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  .text-forest { color: hsl(var(--forest)); }
+  .text-earth { color: hsl(var(--earth)); }
+  .text-stone { color: hsl(var(--stone)); }
+  .text-golden { color: hsl(var(--golden)); }
+  .bg-warm { background-color: hsl(var(--warm)); }
+  .bg-forest { background-color: hsl(var(--forest)); }
+}
