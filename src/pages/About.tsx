@@ -55,7 +55,7 @@ const About = () => {
                 Training this way changed how I felt. I felt more resilient when I would go wakeboard or snowboard or do anything that required athleticism. My friends would look at me and ask how I'm still able to do the things that I do. It's just because of the way I train and the way I take care of myself.
               </p>
               <p>
-                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time. I really go by the philosophy that if you don't use it, you lose it. It is about staying active in multiple different ways. If I want to go play pickleball, tennis, swing a golf club as hard as I possibly can and out drive all my friends, I can do that without worrying about getting injured. If I want to play a pickup game of softball or basketball, I don't have to think twice. That is the way I want to train, and that is the approach I take with everyone I work with.
+                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time. I love being active in every way possible, and the way I train allows me to jump into any activity without worrying about getting hurt. That is the standard I hold myself to, and that is the approach I take with everyone I work with.
               </p>
             </div>
 
