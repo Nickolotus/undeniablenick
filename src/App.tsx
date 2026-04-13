@@ -18,6 +18,14 @@ export const routes: RouteRecord[] = [
         lazy: () => import("./pages/Index"),
       },
       {
+        path: "about",
+        lazy: () => import("./pages/About"),
+      },
+      {
+        path: "coaching",
+        lazy: () => import("./pages/Coaching"),
+      },
+      {
         path: "*",
         lazy: () => import("./pages/NotFound"),
       },
