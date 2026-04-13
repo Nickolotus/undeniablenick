@@ -41,7 +41,7 @@ const Coaching = () => {
             <h2 className="mb-8" style={{ color: "hsl(150 25% 22%)" }}>What Coaching Looks Like</h2>
             <div className="flex flex-col gap-6 leading-relaxed" style={{ color: "hsl(30 10% 45%)" }}>
               <p>
-                Coaching is a working relationship. We start with a conversation to understand your training background, goals, and schedule. From there, I build programming that fits your life -- not the other way around.
+                Coaching is a working relationship. We start with a conversation to understand your training background, goals, and schedule. From there, I build programming that fits your life, not the other way around.
               </p>
               <p>
                 The focus is on building strength, improving mobility, and creating routines that fit into real schedules. Work, family, travel, and injuries are all part of the process. Programming adapts as life changes.
@@ -77,7 +77,7 @@ const Coaching = () => {
               <p>You are dealing with knee pain, shoulder issues, or joints that feel older than you are.</p>
               <p>You are a dad with limited time and need a program that fits around real life.</p>
               <p>You have trained before but need direction and accountability to stay consistent.</p>
-              <p>You want to train for longevity -- to be able to play with your kids at 60 the way you can at 30.</p>
+              <p>You want to train for longevity. To be able to play with your kids at 60 the way you can at 30.</p>
             </div>
           </div>
         </section>

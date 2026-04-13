@@ -40,22 +40,22 @@ const About = () => {
             <h2 className="mb-8" style={{ color: "#2D4A3E" }}>About Me</h2>
             <div className="flex flex-col gap-5 leading-relaxed" style={{ color: "#5A4A3A" }}>
               <p>
-                I grew up playing sports and competed in college. Training was always part of my life, and for a long time I worked out pretty much like a bodybuilder. That was the extent of what I knew for a very long time.
+                I grew up playing sports and competed in college. Training was always part of my life. For years, my approach to working out was built around traditional bodybuilding style training: isolation exercises, heavy compound lifts, and a focus on aesthetics over function. That was all I knew.
               </p>
               <p>
-                After college, life changed. Work became more demanding, time became limited, and my body started telling me that the way I was training was not sustainable. I had destroyed my shoulder in college and my knees were always in pain. I hurt myself enough to care about the way I was training and stop caring so much about how I looked.
+                After college, life changed. Work became more demanding, time became limited, and my body started telling me that the way I was training was not sustainable. I had destroyed my shoulder in college and my knees were always in pain. I reached a point where I cared less about how I looked and more about how my body actually performed in real life. I wanted strength that carried over into everything, not just numbers in a gym.
               </p>
               <p>
-                I found Crossover Symmetry for my shoulders and ATG for my knees. Both worked. The more I committed to full range movement and joint health, the better everything felt. I got away from the barbell because it just felt unnatural and started training exclusively with kettlebells.
+                I found Crossover Symmetry for my shoulders and ATG for my knees. Both worked. The more I committed to full range movement and joint health, the better everything felt. I got away from the barbell because it just felt unnatural and started training exclusively with kettlebells and bodyweight movements.
               </p>
               <p>
                 Eventually I realized I didn't need a gym at all. I built a simple setup in my garage: kettlebells, rings, mirrors, and bands. That's the whole program. I can do everything I need to do with that setup, and I can do it in 45 minutes.
               </p>
               <p>
-                Training this way changed how I felt. I felt more resilient when I would go wakeboard or snowboard or do anything that required athleticism. My friends would look at me and ask how I'm still able to do the things I do. It's just because of the way I train.
+                Training this way changed how I felt. I felt more resilient when I would go wakeboard or snowboard or do anything that required athleticism. My friends would look at me and ask how I'm still able to do the things that I do. It's just because of the way I train and the way I take care of myself.
               </p>
               <p>
-                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time.
+                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time. I really go by the philosophy that if you don't use it, you lose it. It is about staying active in multiple different ways. If I want to go play pickleball, tennis, swing a golf club as hard as I possibly can and out drive all my friends, I can do that without worrying about getting injured. If I want to play a pickup game of softball or basketball, I don't have to think twice. That is the way I want to train, and that is the approach I take with everyone I work with.
               </p>
             </div>
 
@@ -63,7 +63,7 @@ const About = () => {
               <h2 className="mb-6" style={{ color: "#2D4A3E" }}>My Approach</h2>
               <div className="flex flex-col gap-5 leading-relaxed" style={{ color: "#5A4A3A" }}>
                 <p>
-                  Today, my focus is straightforward. Train in a way that supports life, not competes with it. Build habits that are simple and repeatable. Focus on full range of motion, joint health, and movements that carry over into daily life.
+                  My focus is straightforward. Train in a way that supports life, not competes with it. Build habits that are simple and repeatable. Focus on full range of motion, joint health, and movements that make you better at everything outside the gym.
                 </p>
                 <p>
                   Nutrition is approached with the same mindset. The goal is not restriction or rigid rules, but practical guidance that supports training, recovery, and daily energy. Recommendations are individualized, realistic, and designed to be maintained over time.
@@ -72,7 +72,7 @@ const About = () => {
                   Faith played an important role in shaping this perspective. Stewardship matters to me. Taking care of what you have been given, your body, your family, and your responsibilities, is central to how I approach everything.
                 </p>
                 <p>
-                  This site exists as a place to clearly communicate that approach. Not to impress. Not to persuade. But to share how I think, how I train, and how I work with people who value simplicity, discipline, and longevity.
+                  This site exists as a place to clearly communicate that approach. Not to impress. Not to persuade. But to share how I think, how I train, and how I work with people who value simplicity, discipline, and longevity as much as I do.
                 </p>
               </div>
             </div>

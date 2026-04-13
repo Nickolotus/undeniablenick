@@ -33,7 +33,7 @@ const Index = () => {
             <h1 className="text-white mb-5" style={{ fontWeight: 900, letterSpacing: "-0.03em", textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}>
               The Undeniable<br />Man Project
             </h1>
-            <p className="text-white/80 text-lg max-w-md mb-8 leading-relaxed">Helping men become the best version of themselves -- one kettlebell, one day at a time.</p>
+            <p className="text-white/80 text-lg max-w-md mb-8 leading-relaxed">Helping men become the best version of themselves. One kettlebell, one day at a time.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/coaching" className="btn-golden text-lg">Work With Me</Link>
               <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="btn-outline-white text-lg">Follow the Journey</a>
@@ -45,7 +45,7 @@ const Index = () => {
         <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
           <div className="max-w-2xl mx-auto px-5 text-center">
             <p className="text-lg leading-relaxed" style={{ color: "#5A4A3A", fontStyle: "italic" }}>
-              "I'm just a guy trying to figure out life just like you. I train in my garage in Louisiana, I run trails on Saturday mornings, and I'm learning how to be a dad. This is not a brand. It's a journey -- and you're invited."
+              "I'm just a guy trying to figure out life just like you. I train in my garage in Louisiana, I run trails on Saturday mornings, and I'm learning how to be a dad. This is not a brand. It's a journey, and you're invited."
             </p>
             <p className="mt-6 font-bold" style={{ color: "#2D4A3E" }}>-- Nick Chiasson</p>
           </div>
@@ -84,7 +84,7 @@ const Index = () => {
             <h2 className="mb-6" style={{ color: "#2D4A3E" }}>Faith First</h2>
             <div className="flex flex-col gap-5 leading-relaxed" style={{ color: "#5A4A3A" }}>
               <p>I try to live my life in a faith-centered way, but I have a hard time doing that sometimes. I get on streaks of being super disciplined and then I fall off. Life gets busy, life gets crazy, and things change. That's just real.</p>
-              <p>The goal is to be undeniable -- to undeniably live your life the way that you're called to live it. When someone talks about you, they cannot deny that you are putting in the effort, you are who you say you are, and you are actively trying to become the man that you're called to be.</p>
+              <p>The goal is to be undeniable. To undeniably live your life the way that you're called to live it. When someone talks about you, they cannot deny that you are putting in the effort, you are who you say you are, and you are actively trying to become the man that you're called to be.</p>
               <p style={{ fontWeight: 700, color: "#2D4A3E" }}>Everyone falls off. What matters most is how you get back up and keep going.</p>
             </div>
           </div>
