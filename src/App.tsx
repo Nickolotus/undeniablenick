@@ -26,6 +26,14 @@ export const routes: RouteRecord[] = [
         lazy: () => import("./pages/Coaching"),
       },
       {
+        path: "programs",
+        lazy: () => import("./pages/Programs"),
+      },
+      {
+        path: "programs/sardine-fast",
+        lazy: () => import("./pages/SardineFast"),
+      },
+      {
         path: "*",
         lazy: () => import("./pages/NotFound"),
       },

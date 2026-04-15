@@ -48,16 +48,16 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.2;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    line-height: 1.15;
     color: hsl(var(--forest));
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
   }
 
-  h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); }
-  h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
-  h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 700; }
+  h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+  h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); font-weight: 600; }
 }
 
 @layer components {

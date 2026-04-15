@@ -13,12 +13,19 @@ const About = () => {
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-black/5" style={{ height: 72 }}>
         <div className="max-w-6xl mx-auto px-5 h-full flex items-center justify-between">
-          <Link to="/" className="text-xl tracking-tight" style={{ fontWeight: 900, color: "hsl(150 25% 22%)" }}>UNDENIABLE NICK</Link>
+          <Link to="/" className="flex items-center gap-3">
+            <svg width="36" height="36" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="34" fill="#2D4A3E"/>
+              <text x="40" y="48" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="500" fontSize="28" letterSpacing="2" fill="#D4943A">UN</text>
+            </svg>
+            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: "1.25rem", letterSpacing: "0.05em", color: "#2D4A3E" }}>UNDENIABLE NICK</span>
+          </Link>
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>Home</Link>
-            <Link to="/about" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)" }}>About</Link>
-            <Link to="/coaching" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>Coaching</Link>
-            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>Instagram</a>
+            <Link to="/" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Home</Link>
+            <Link to="/about" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E" }}>About</Link>
+            <Link to="/programs" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Programs</Link>
+            <Link to="/coaching" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Coaching</Link>
+            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Instagram</a>
           </nav>
         </div>
       </header>
@@ -46,16 +53,16 @@ const About = () => {
                 After college, life changed. Work became more demanding, time became limited, and my body started telling me that the way I was training was not sustainable. I had destroyed my shoulder in college and my knees were always in pain. I reached a point where I cared less about how I looked and more about how my body actually performed in real life. I wanted strength that carried over into everything, not just numbers in a gym.
               </p>
               <p>
-                I found Crossover Symmetry for my shoulders and ATG for my knees. Both worked. The more I committed to full range movement and joint health, the better everything felt. I got away from the barbell because it just felt unnatural and started training exclusively with kettlebells and bodyweight movements.
+                I found Crossover Symmetry for my shoulders and ATG for my knees. Both worked. The more I committed to full range movement and joint health, the better everything felt. I moved away from the barbell entirely and started training exclusively with kettlebells and bodyweight movements.
               </p>
               <p>
-                Eventually I realized I didn't need a gym at all. I built a simple setup in my garage: kettlebells, rings, mirrors, and bands. That's the whole program. I can do everything I need to do with that setup, and I can do it in 45 minutes.
+                Eventually I realized I did not need a gym at all. I built a simple setup in my garage: kettlebells, rings, mirrors, and bands. That is the entire program. Everything I need, done in 45 minutes.
               </p>
               <p>
-                Training this way changed how I felt. I felt more resilient when I would go wakeboard or snowboard or do anything that required athleticism. My friends would look at me and ask how I'm still able to do the things that I do. It's just because of the way I train and the way I take care of myself.
+                Training this way changed how I felt. I became more resilient in every activity that required athleticism, from wakeboarding to snowboarding to anything demanding. The difference is the way I train and the way I take care of my body.
               </p>
               <p>
-                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time. I love being active in every way possible, and the way I train allows me to jump into any activity without worrying about getting hurt. That is the standard I hold myself to, and that is the approach I take with everyone I work with.
+                As my life changed and responsibilities grew, I realized the answer is not doing more. It is doing what matters consistently. Strength, mobility, and durability come from simple habits practiced over time. The way I train allows me to step into any activity with confidence. That is the standard I hold myself to, and that is the approach I take with everyone I work with.
               </p>
             </div>
 
@@ -83,7 +90,7 @@ const About = () => {
         <section className="section-pad" style={{ backgroundColor: "#2D4A3E" }}>
           <div className="max-w-2xl mx-auto px-5 text-center">
             <h2 className="text-white mb-5">Want to Train Like This?</h2>
-            <p className="text-white/80 text-lg mb-8">One kettlebell. Your garage. 45 minutes. Let's build something that fits your life.</p>
+            <p className="text-white/80 text-lg mb-8">One kettlebell. Your garage. 45 minutes. A program built around your life.</p>
             <Link to="/coaching" className="btn-golden text-lg">Work With Me</Link>
           </div>
         </section>
@@ -93,8 +100,8 @@ const About = () => {
           <div className="max-w-6xl mx-auto px-5">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <p className="text-white font-bold text-lg">UNDENIABLE NICK</p>
-                <p className="text-white/60 text-sm">Faith Driven Fitness & Lifestyle Coach</p>
+                <p className="text-white text-lg" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, letterSpacing: "0.05em" }}>UNDENIABLE NICK</p>
+                <p className="text-white/60 text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>Faith. Health. Fatherhood.</p>
               </div>
               <div className="flex gap-6">
                 <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white text-sm transition-colors">Instagram</a>

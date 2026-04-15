@@ -13,12 +13,19 @@ const Coaching = () => {
       {/* NAV */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-black/5" style={{ height: 72 }}>
         <div className="max-w-6xl mx-auto px-5 h-full flex items-center justify-between">
-          <Link to="/" className="text-xl tracking-tight" style={{ fontWeight: 900, color: "hsl(150 25% 22%)" }}>UNDENIABLE NICK</Link>
+          <Link to="/" className="flex items-center gap-3">
+            <svg width="36" height="36" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="34" fill="#2D4A3E"/>
+              <text x="40" y="48" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontWeight="500" fontSize="28" letterSpacing="2" fill="#D4943A">UN</text>
+            </svg>
+            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: "1.25rem", letterSpacing: "0.05em", color: "#2D4A3E" }}>UNDENIABLE NICK</span>
+          </Link>
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>Home</Link>
-            <Link to="/about" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>About</Link>
-            <Link to="/coaching" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)" }}>Coaching</Link>
-            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold" style={{ color: "hsl(150 25% 22%)", opacity: 0.7 }}>Instagram</a>
+            <Link to="/" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Home</Link>
+            <Link to="/about" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>About</Link>
+            <Link to="/programs" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Programs</Link>
+            <Link to="/coaching" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E" }}>Coaching</Link>
+            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Instagram</a>
           </nav>
         </div>
       </header>
@@ -102,8 +109,8 @@ const Coaching = () => {
           <div className="max-w-6xl mx-auto px-5">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
-                <p className="text-white font-bold text-lg">UNDENIABLE NICK</p>
-                <p className="text-white/60 text-sm">Faith Driven Fitness & Lifestyle Coach</p>
+                <p className="text-white text-lg" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, letterSpacing: "0.05em" }}>UNDENIABLE NICK</p>
+                <p className="text-white/60 text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>Faith Driven Fitness & Lifestyle Coach</p>
               </div>
               <div className="flex gap-6">
                 <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white text-sm transition-colors">Instagram</a>
