@@ -63,7 +63,7 @@ const About = () => {
             <img src="/nick-profile.jpg" alt="Nick Chiasson" style={{ width: 220, height: 220, borderRadius: "50%", objectFit: "cover", objectPosition: "top", flexShrink: 0, border: "4px solid #2D4A3E" }} />
             <div>
               <p className="text-lg leading-relaxed" style={{ color: "#5A4A3A", fontStyle: "italic" }}>
-                "I train in my garage in Louisiana, I run trails on Saturday mornings, and I am learning to be a better man every single day. This is not a brand. It is a journey, and you are invited."
+                "We are all on a mission to become the men we are called to be. It is not about how many times you fail. It is about how many times you get up and keep going."
               </p>
               <p className="mt-4 font-bold" style={{ color: "#2D4A3E" }}>Nick Chiasson</p>
             </div>
