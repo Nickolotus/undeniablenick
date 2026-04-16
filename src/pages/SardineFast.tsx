@@ -87,7 +87,7 @@ const SardineFast = () => {
                 <div key={i} className="flex gap-4 items-start">
                   <div style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: "#D4943A", flexShrink: 0, marginTop: 6 }} />
                   <div>
-                    <h3 className="text-sm font-bold mb-1" style={{ color: "#2D4A3E" }}>{item.title}</h3>
+                    <h3 className="font-bold mb-1" style={{ color: "#2D4A3E", fontSize: "1.1rem" }}>{item.title}</h3>
                     <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>{item.desc}</p>
                   </div>
                 </div>
