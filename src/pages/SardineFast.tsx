@@ -77,15 +77,15 @@ const SardineFast = () => {
             <h2 className="text-center mb-10" style={{ color: "#2D4A3E" }}>What's Inside</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { icon: "📋", title: "Day-by-Day Breakdown", desc: "What happens in your body on each day of the fast, from glycogen depletion to ketosis to visible changes." },
-                { icon: "🧬", title: "The Science", desc: "Omega-3 levels, selenium, B12, taurine, brown fat activation. Based on Dr. Berg's research and clinical data." },
-                { icon: "🛒", title: "What to Buy", desc: "Which sardines to get, what electrolytes you need, and how to prep before Day 1." },
-                { icon: "💪", title: "Per-Can Nutrition", desc: "23g protein, 900mg omega-3, 348% B12 per can. Full breakdown of what 3 cans a day gives you." },
-                { icon: "⚠️", title: "What to Expect", desc: "Dopamine hunger, mental clarity, energy shifts, and how to push through the wall." },
-                { icon: "✅", title: "How to Come Off", desc: "How to transition back to normal eating without losing the benefits." },
+                { title: "Day-by-Day Breakdown", desc: "What happens in your body on each day of the fast, from glycogen depletion to ketosis to visible changes." },
+                { title: "The Science", desc: "Omega-3 levels, selenium, B12, taurine, brown fat activation. Based on Dr. Berg's research and clinical data." },
+                { title: "What to Buy", desc: "Which sardines to get, what electrolytes you need, and how to prep before Day 1." },
+                { title: "Per-Can Nutrition", desc: "23g protein, 900mg omega-3, 348% B12 per can. Full breakdown of what 3 cans a day gives you." },
+                { title: "What to Expect", desc: "Dopamine hunger, mental clarity, energy shifts, and how to push through the wall." },
+                { title: "How to Come Off", desc: "How to transition back to normal eating without losing the benefits." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
-                  <span style={{ fontSize: "28px", flexShrink: 0 }}>{item.icon}</span>
+                  <div style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: "#D4943A", flexShrink: 0, marginTop: 6 }} />
                   <div>
                     <h3 className="text-sm font-bold mb-1" style={{ color: "#2D4A3E" }}>{item.title}</h3>
                     <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>{item.desc}</p>
