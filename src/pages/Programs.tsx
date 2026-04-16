@@ -48,28 +48,36 @@ const Programs = () => {
             <div className="grid md:grid-cols-2 gap-8">
 
               {/* SARDINE FAST GUIDE */}
-              <Link to="/programs/sardine-fast" className="block border rounded-lg overflow-hidden hover:shadow-lg transition-shadow" style={{ borderColor: "#e0d8cc" }}>
-                <div style={{ backgroundColor: "#2D4A3E", padding: "40px 24px", textAlign: "center" }}>
-                  <span style={{ fontSize: "48px" }}>🐟</span>
-                  <h3 className="text-white mt-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 5-Day Sardine Fast Guide</h3>
+              <Link to="/programs/sardine-fast" className="block rounded-lg overflow-hidden hover:shadow-lg transition-shadow" style={{ border: "none" }}>
+                <div style={{ position: "relative", overflow: "hidden", height: "220px" }}>
+                  <img src="/program-sardine.png" alt="Sardines in tin on cutting board" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%)" }} />
+                  <div style={{ position: "absolute", bottom: "20px", left: "24px", right: "24px" }}>
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#D4943A", marginBottom: "8px" }}>Free Guide</p>
+                    <h3 className="text-white" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", lineHeight: 1.3 }}>The 5-Day Sardine Fast</h3>
+                  </div>
                 </div>
-                <div style={{ padding: "20px 24px" }}>
+                <div style={{ padding: "20px 24px", backgroundColor: "#fff" }}>
                   <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>
-                    Everything you need to know before starting a sardine fast. Day-by-day breakdown, nutrition facts, what to expect, and how to finish strong. Based on Dr. Berg's research.
+                    Day-by-day breakdown, nutrition facts, what to expect, and how to finish strong. Based on Dr. Berg's research.
                   </p>
                   <p className="mt-4 text-sm font-bold" style={{ color: "#D4943A" }}>Download Free Guide &rarr;</p>
                 </div>
               </Link>
 
               {/* COMING SOON PLACEHOLDER */}
-              <div className="block border rounded-lg overflow-hidden opacity-50" style={{ borderColor: "#e0d8cc" }}>
-                <div style={{ backgroundColor: "#5A4A3A", padding: "40px 24px", textAlign: "center" }}>
-                  <span style={{ fontSize: "48px" }}>🏋️</span>
-                  <h3 className="text-white mt-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Kettlebell Flow Program</h3>
+              <div className="block rounded-lg overflow-hidden" style={{ border: "none", opacity: 0.6 }}>
+                <div style={{ position: "relative", overflow: "hidden", height: "220px" }}>
+                  <img src="/program-kettlebell.png" alt="Kettlebell in garage gym with morning light" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%)" }} />
+                  <div style={{ position: "absolute", bottom: "20px", left: "24px", right: "24px" }}>
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#888", marginBottom: "8px" }}>Coming Soon</p>
+                    <h3 className="text-white" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", lineHeight: 1.3 }}>Kettlebell Flow Program</h3>
+                  </div>
                 </div>
-                <div style={{ padding: "20px 24px" }}>
+                <div style={{ padding: "20px 24px", backgroundColor: "#fff" }}>
                   <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>
-                    A garage gym program built for busy men. One kettlebell. 45 minutes. Full body. Full range. The only program you need.
+                    A garage gym program built for busy men. One kettlebell. 45 minutes. Full body. Full range.
                   </p>
                   <p className="mt-4 text-sm font-bold" style={{ color: "#999" }}>Coming Soon</p>
                 </div>
