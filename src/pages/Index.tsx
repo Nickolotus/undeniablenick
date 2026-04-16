@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Index = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <Helmet>
@@ -27,7 +29,21 @@ const Index = () => {
             <Link to="/coaching" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Coaching</Link>
             <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Instagram</a>
           </nav>
+          <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8 }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M3 12h18M3 6h18M3 18h18"} /></svg>
+          </button>
         </div>
+        {menuOpen && (
+          <div className="md:hidden" style={{ background: "rgba(0,0,0,0.95)", padding: "20px" }}>
+            <nav className="flex flex-col gap-4">
+              <Link to="/" onClick={() => setMenuOpen(false)} className="text-white text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Home</Link>
+              <Link to="/about" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>About</Link>
+              <Link to="/programs" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Programs</Link>
+              <Link to="/coaching" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Coaching</Link>
+              <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Instagram</a>
+            </nav>
+          </div>
+        )}
       </header>
 
       <main>

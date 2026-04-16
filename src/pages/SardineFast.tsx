@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const SardineFast = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -39,15 +40,30 @@ const SardineFast = () => {
             <Link to="/coaching" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Coaching</Link>
             <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Instagram</a>
           </nav>
+          <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8, color: "#2D4A3E" }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M3 12h18M3 6h18M3 18h18"} /></svg>
+          </button>
         </div>
+        {menuOpen && (
+          <div className="md:hidden" style={{ background: "#2D4A3E", padding: "20px" }}>
+            <nav className="flex flex-col gap-4">
+              <Link to="/" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "#F5EFE0" }}>Home</Link>
+              <Link to="/about" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>About</Link>
+              <Link to="/programs" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Programs</Link>
+              <Link to="/coaching" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Coaching</Link>
+              <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Instagram</a>
+            </nav>
+          </div>
+        )}
       </header>
       <div style={{ height: 72 }} />
 
       <main>
         {/* HERO */}
-        <section style={{ backgroundColor: "#2D4A3E", padding: "80px 20px", textAlign: "center" }}>
-          <div className="max-w-2xl mx-auto">
-            <span style={{ fontSize: "64px", display: "block", marginBottom: "20px" }}>🐟</span>
+        <section style={{ position: "relative", padding: "80px 20px", textAlign: "center", overflow: "hidden" }}>
+          <img src="/program-sardine.png" alt="Sardines in tin" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+          <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(20,15,10,0.75)" }} />
+          <div className="max-w-2xl mx-auto" style={{ position: "relative", zIndex: 1 }}>
             <h1 className="text-white mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 5-Day Sardine Fast Guide</h1>
             <p className="text-white/80 text-lg leading-relaxed">
               Everything you need to know before, during, and after a sardine fast. Day-by-day breakdown, the science behind it, and real results.
