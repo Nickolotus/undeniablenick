@@ -68,9 +68,9 @@ const Index = () => {
         <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
           <div className="max-w-2xl mx-auto px-5 text-center">
             <p className="text-lg leading-relaxed" style={{ color: "#5A4A3A", fontStyle: "italic" }}>
-              "I train in my garage in Louisiana, I run trails on Saturday mornings, and I am learning to be a better man every single day. This is not a brand. It is a journey, and you are invited."
+              "We are all on a mission to become the men we are called to be. It is not about how many times you fail. It is about how many times you get up and keep going."
             </p>
-            <p className="mt-6 font-bold" style={{ color: "#2D4A3E" }}>-- Nick Chiasson</p>
+            <p className="mt-6 font-bold" style={{ color: "#2D4A3E" }}>Nick Chiasson</p>
           </div>
         </section>
 

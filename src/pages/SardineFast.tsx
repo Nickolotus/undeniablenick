@@ -10,9 +10,20 @@ const SardineFast = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to Kit (ConvertKit) API to capture email
-    // For now, just show success state
-    setSubmitted(true);
+    try {
+      const res = await fetch("https://issulzghxyggrajoxcna.supabase.co/functions/v1/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, source: "sardine-fast" }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
