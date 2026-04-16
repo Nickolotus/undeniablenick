@@ -1,5 +1,5 @@
 -- Undeniable Nick Email Subscriber System
--- Run this in Supabase SQL Editor: https://supabase.com/dashboard/project/issulzghxyggrajoxcna/sql
+-- Run this in Supabase SQL Editor: https://supabase.com/dashboard/project/tsglyyizwzapbyogdvhw/sql
 
 -- Subscribers table
 CREATE TABLE IF NOT EXISTS un_subscribers (

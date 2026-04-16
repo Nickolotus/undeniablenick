@@ -85,10 +85,10 @@ async function sendPdfEmail(apiKey: string, email: string, name?: string) {
   const firstName = name || "there";
 
   // Tracking pixel for open tracking
-  const trackingPixel = `<img src="https://issulzghxyggrajoxcna.supabase.co/functions/v1/track?type=open&email=${encodeURIComponent(email)}&campaign=sardine-fast-pdf" width="1" height="1" style="display:none;" />`;
+  const trackingPixel = `<img src="https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/track?type=open&email=${encodeURIComponent(email)}&campaign=sardine-fast-pdf" width="1" height="1" style="display:none;" />`;
 
   // PDF link with click tracking
-  const pdfUrl = `https://issulzghxyggrajoxcna.supabase.co/functions/v1/track?type=click&email=${encodeURIComponent(email)}&campaign=sardine-fast-pdf&redirect=${encodeURIComponent("https://undeniablenick.com/5-Day-Sardine-Fast-Guide.pdf")}`;
+  const pdfUrl = `https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/track?type=click&email=${encodeURIComponent(email)}&campaign=sardine-fast-pdf&redirect=${encodeURIComponent("https://undeniablenick.com/5-Day-Sardine-Fast-Guide.pdf")}`;
 
   const htmlBody = `
     <div style="font-family: 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">

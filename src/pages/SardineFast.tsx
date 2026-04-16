@@ -11,7 +11,7 @@ const SardineFast = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://issulzghxyggrajoxcna.supabase.co/functions/v1/subscribe", {
+      const res = await fetch("https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, source: "sardine-fast" }),

@@ -110,7 +110,7 @@ serve(async (req) => {
       const htmlContent = email.body.replace(/\{\{name\}\}/g, firstName);
 
       // Tracking pixel
-      const trackingPixel = `<img src="https://issulzghxyggrajoxcna.supabase.co/functions/v1/track?type=open&email=${encodeURIComponent(sub.email)}&campaign=drip-${sub.drip_step}" width="1" height="1" style="display:none;" />`;
+      const trackingPixel = `<img src="https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/track?type=open&email=${encodeURIComponent(sub.email)}&campaign=drip-${sub.drip_step}" width="1" height="1" style="display:none;" />`;
 
       const fullHtml = `
         <div style="font-family: 'Helvetica Neue', Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333; padding: 20px;">
