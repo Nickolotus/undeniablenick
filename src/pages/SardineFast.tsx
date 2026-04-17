@@ -7,9 +7,12 @@ const SardineFast = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting || submitted) return;
+    setIsSubmitting(true);
     try {
       const res = await fetch("https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/subscribe", {
         method: "POST",
@@ -20,9 +23,11 @@ const SardineFast = () => {
         setSubmitted(true);
       } else {
         alert("Something went wrong. Please try again.");
+        setIsSubmitting(false);
       }
     } catch (err) {
       alert("Something went wrong. Please try again.");
+      setIsSubmitting(false);
     }
   };
 
@@ -149,10 +154,16 @@ const SardineFast = () => {
                   />
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     className="btn-golden"
-                    style={{ padding: "14px 24px", fontSize: "16px", cursor: "pointer" }}
+                    style={{
+                      padding: "14px 24px",
+                      fontSize: "16px",
+                      cursor: isSubmitting ? "not-allowed" : "pointer",
+                      opacity: isSubmitting ? 0.6 : 1,
+                    }}
                   >
-                    Send Me the Guide
+                    {isSubmitting ? "Sending..." : "Send Me the Guide"}
                   </button>
                   <p className="text-xs" style={{ color: "#999" }}>No spam. Unsubscribe anytime.</p>
                 </form>

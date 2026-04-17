@@ -34,13 +34,25 @@ serve(async (req) => {
     // Check if subscriber already exists
     const { data: existing } = await supabase
       .from("un_subscribers")
-      .select("id, email")
+      .select("id, email, last_emailed")
       .eq("email", email.toLowerCase())
       .single();
 
     if (existing) {
-      // Already subscribed, still send the PDF
-      await sendPdfEmail(RESEND_API_KEY, email, name);
+      // Idempotency: if we emailed this person in the last 60 seconds, skip the resend
+      // (prevents duplicate sends from double-clicks, retries, bots)
+      const recentlyEmailed =
+        existing.last_emailed &&
+        Date.now() - new Date(existing.last_emailed).getTime() < 60_000;
+
+      if (!recentlyEmailed) {
+        await sendPdfEmail(RESEND_API_KEY, email, name);
+        await supabase
+          .from("un_subscribers")
+          .update({ last_emailed: new Date().toISOString() })
+          .eq("id", existing.id);
+      }
+
       return new Response(
         JSON.stringify({ success: true, message: "Already subscribed, PDF resent" }),
         { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
@@ -57,6 +69,7 @@ serve(async (req) => {
         tags: [source || "sardine-fast"],
         drip_step: 0,
         subscribed_at: new Date().toISOString(),
+        last_emailed: new Date().toISOString(),
         is_active: true,
       });
 
