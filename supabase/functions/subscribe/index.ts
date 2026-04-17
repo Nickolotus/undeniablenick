@@ -135,7 +135,7 @@ async function sendPdfEmail(apiKey: string, email: string, name?: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "Nick at Undeniable Nick <onboarding@resend.dev>",
+      from: "Nick at Undeniable Nick <nick@liveundeniable.co>",
       to: [email],
       subject: "Your 5-Day Sardine Fast Guide",
       html: htmlBody,
