@@ -13,7 +13,7 @@ const QUALITY = 'high';
 const IMAGES = [
   {
     name: 'hero-outdoor',
-    prompt: 'iPhone photograph of a man from behind, mid-stride, jogging along a narrow dirt path through a Louisiana pine forest on an overcast morning. The man is in his mid-30s, athletic build, wearing a plain heather-gray t-shirt and black athletic shorts, visible slight motion blur on his legs. The path is uneven, pine needles scattered, small exposed roots. Real longleaf pines in normal irregular spacing, some scrubby underbrush, a few dead branches on the ground. Flat diffuse daylight, no sunbeams, no mist, no god rays, no lens flare. Natural muted greens and earth browns, no color grading. Looks like a casual snapshot taken mid-run. Slightly soft focus typical of a handheld phone capture. No filter, no HDR, unedited. Sky visible as a flat gray-white through the tree canopy at the top of the frame. No text, no logos, no watermarks.',
+    prompt: 'Phone photograph from the edge of a Louisiana pine forest on an early overcast morning, looking out from the treeline across a wide open grass field. The left third of the frame is dominated by the trunks of real longleaf pines with ordinary underbrush and pine needles on the ground. The right two-thirds open up into a gently rolling grass field with tall dry grass, some wildflowers and weeds, and a barbed-wire fence line visible far in the distance. Flat diffuse natural daylight, no sunbeams, no mist, no god rays, no lens flare. Natural muted greens, tans, and earth tones, unedited, no color grading, no HDR. Slightly off-center handheld composition. The top third of the frame is pale gray overcast sky. No people, no animals, no text, no watermarks, no logos.',
   },
   {
     name: 'trail-landscape',
