@@ -10,6 +10,15 @@ const Programs = () => {
         <title>Free Programs & Resources | Undeniable Nick</title>
         <meta name="description" content="Free guides, programs, and resources for men who want to train smarter, eat cleaner, and show up better. Health, faith, and fatherhood." />
         <link rel="canonical" href="https://undeniablenick.com/programs" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Free Programs & Resources | Undeniable Nick" />
+        <meta property="og:description" content="Free guides and programs for men who want to train smarter, eat cleaner, and show up better." />
+        <meta property="og:url" content="https://undeniablenick.com/programs" />
+        <meta property="og:image" content="https://undeniablenick.com/hero-outdoor.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Free Programs & Resources | Undeniable Nick" />
+        <meta name="twitter:description" content="Free guides and programs for men who want to train smarter, eat cleaner, and show up better." />
+        <meta name="twitter:image" content="https://undeniablenick.com/hero-outdoor.png" />
       </Helmet>
 
       {/* NAV */}
@@ -27,7 +36,6 @@ const Programs = () => {
             <Link to="/about" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>About</Link>
             <Link to="/programs" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E" }}>Programs</Link>
             <Link to="/coaching" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Coaching</Link>
-            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Instagram</a>
           </nav>
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8, color: "#2D4A3E" }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M3 12h18M3 6h18M3 18h18"} /></svg>
@@ -40,7 +48,6 @@ const Programs = () => {
               <Link to="/about" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>About</Link>
               <Link to="/programs" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Programs</Link>
               <Link to="/coaching" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Coaching</Link>
-              <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Instagram</a>
             </nav>
           </div>
         )}
@@ -66,7 +73,7 @@ const Programs = () => {
               {/* SARDINE FAST GUIDE */}
               <Link to="/programs/sardine-fast" className="block rounded-lg overflow-hidden hover:shadow-lg transition-shadow" style={{ border: "none" }}>
                 <div style={{ position: "relative", overflow: "hidden", height: "220px" }}>
-                  <img src="/program-sardine.png" alt="Sardines in tin on cutting board" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <img src="/program-sardine.webp" alt="Sardines in tin on cutting board" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%)" }} />
                   <div style={{ position: "absolute", bottom: "20px", left: "24px", right: "24px" }}>
                     <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#D4943A", marginBottom: "8px" }}>Free Guide</p>
@@ -81,23 +88,23 @@ const Programs = () => {
                 </div>
               </Link>
 
-              {/* COMING SOON PLACEHOLDER */}
-              <div className="block rounded-lg overflow-hidden" style={{ border: "none", opacity: 0.6 }}>
+              {/* KETTLEBELL FLOW GUIDE */}
+              <Link to="/programs/kettlebell-flow" className="block rounded-lg overflow-hidden hover:shadow-lg transition-shadow" style={{ border: "none" }}>
                 <div style={{ position: "relative", overflow: "hidden", height: "220px" }}>
-                  <img src="/program-kettlebell.png" alt="Kettlebell in garage gym with morning light" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <img src="/program-kettlebell.webp" alt="Kettlebell in garage gym with morning light" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%)" }} />
                   <div style={{ position: "absolute", bottom: "20px", left: "24px", right: "24px" }}>
-                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#888", marginBottom: "8px" }}>Coming Soon</p>
-                    <h3 className="text-white" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", lineHeight: 1.3 }}>Kettlebell Flow Program</h3>
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#D4943A", marginBottom: "8px" }}>Free Program</p>
+                    <h3 className="text-white" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", lineHeight: 1.3 }}>The 3-Day Kettlebell Flow</h3>
                   </div>
                 </div>
                 <div style={{ padding: "20px 24px", backgroundColor: "#fff" }}>
                   <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>
                     A garage gym program built for busy men. One kettlebell. 45 minutes. Full body. Full range.
                   </p>
-                  <p className="mt-4 text-sm font-bold" style={{ color: "#999" }}>Coming Soon</p>
+                  <p className="mt-4 text-sm font-bold" style={{ color: "#D4943A" }}>Download Free Program &rarr;</p>
                 </div>
-              </div>
+              </Link>
 
             </div>
           </div>

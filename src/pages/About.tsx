@@ -8,8 +8,17 @@ const About = () => {
     <>
       <Helmet>
         <title>About Nick Chiasson | Undeniable Nick</title>
-        <meta name="description" content="I grew up playing sports and competed in college. Training was always part of my life. After injuries forced me to change, I rebuilt everything through kettlebells, ATG, and full-range training." />
+        <meta name="description" content="I grew up playing sports and competed in college. After injuries forced me to change, I rebuilt everything through kettlebells, ATG, and full-range training." />
         <link rel="canonical" href="https://undeniablenick.com/about" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="About Nick Chiasson | Undeniable Nick" />
+        <meta property="og:description" content="From college athlete to busy dad. How I rebuilt my training around kettlebells, joint health, and full-range movement." />
+        <meta property="og:url" content="https://undeniablenick.com/about" />
+        <meta property="og:image" content="https://undeniablenick.com/trail-landscape.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Nick Chiasson | Undeniable Nick" />
+        <meta name="twitter:description" content="From college athlete to busy dad. How I rebuilt my training around kettlebells, joint health, and full-range movement." />
+        <meta name="twitter:image" content="https://undeniablenick.com/trail-landscape.png" />
       </Helmet>
 
       {/* NAV */}
@@ -27,7 +36,6 @@ const About = () => {
             <Link to="/about" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E" }}>About</Link>
             <Link to="/programs" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Programs</Link>
             <Link to="/coaching" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Coaching</Link>
-            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, color: "#2D4A3E", opacity: 0.7 }}>Instagram</a>
           </nav>
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8, color: "#2D4A3E" }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M3 12h18M3 6h18M3 18h18"} /></svg>
@@ -40,7 +48,6 @@ const About = () => {
               <Link to="/about" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>About</Link>
               <Link to="/programs" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Programs</Link>
               <Link to="/coaching" onClick={() => setMenuOpen(false)} className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Coaching</Link>
-              <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-lg" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(245,239,224,0.7)" }}>Instagram</a>
             </nav>
           </div>
         )}
@@ -50,7 +57,7 @@ const About = () => {
       <main>
         {/* HERO */}
         <section className="relative" style={{ minHeight: 400 }}>
-          <img src="/trail-landscape.png" alt="Louisiana trail at sunrise" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/trail-landscape.webp" alt="Louisiana trail at sunrise" fetchpriority="high" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 flex items-center justify-center" style={{ minHeight: 400 }}>
             <h1 className="text-white text-center" style={{ fontWeight: 900, textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}>Nick Chiasson</h1>
@@ -60,7 +67,7 @@ const About = () => {
         {/* PROFILE PHOTO */}
         <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
           <div className="max-w-3xl mx-auto px-5 flex flex-col md:flex-row items-center gap-8">
-            <img src="/nick-profile.jpg" alt="Nick Chiasson" style={{ width: 220, height: 220, borderRadius: "50%", objectFit: "cover", objectPosition: "top", flexShrink: 0, border: "4px solid #2D4A3E" }} />
+            <img src="/nick-profile.webp" alt="Nick Chiasson" loading="lazy" decoding="async" width="220" height="220" style={{ width: 220, height: 220, borderRadius: "50%", objectFit: "cover", objectPosition: "top", flexShrink: 0, border: "4px solid #2D4A3E" }} />
             <div>
               <p className="text-lg leading-relaxed" style={{ color: "#5A4A3A", fontStyle: "italic" }}>
                 "We are all on a mission to become the men we are called to be. It is not about how many times you fail. It is about how many times you get up and keep going."

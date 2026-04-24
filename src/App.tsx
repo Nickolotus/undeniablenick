@@ -1,12 +1,7 @@
-import { HelmetProvider } from "react-helmet-async";
 import { Outlet } from "react-router-dom";
 import type { RouteRecord } from "vite-react-ssg";
 
-const Layout = () => (
-  <HelmetProvider>
-    <Outlet />
-  </HelmetProvider>
-);
+const Layout = () => <Outlet />;
 
 export const routes: RouteRecord[] = [
   {
@@ -32,6 +27,10 @@ export const routes: RouteRecord[] = [
       {
         path: "programs/sardine-fast",
         lazy: () => import("./pages/SardineFast"),
+      },
+      {
+        path: "programs/kettlebell-flow",
+        lazy: () => import("./pages/KettlebellFlow"),
       },
       {
         path: "*",

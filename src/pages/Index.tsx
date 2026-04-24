@@ -10,6 +10,30 @@ const Index = () => {
         <title>Undeniable Nick | Faith. Health. Fatherhood.</title>
         <meta name="description" content="Faith. Health. Fatherhood. Helping men stay strong, athletic, and purposeful through simple kettlebell training, nutrition, and real accountability." />
         <link rel="canonical" href="https://undeniablenick.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Undeniable Nick | Faith. Health. Fatherhood." />
+        <meta property="og:description" content="Faith. Health. Fatherhood. Helping men stay strong, athletic, and purposeful." />
+        <meta property="og:url" content="https://undeniablenick.com/" />
+        <meta property="og:image" content="https://undeniablenick.com/hero-outdoor.png" />
+        <meta property="og:image:alt" content="Running through Louisiana pine forest at golden hour" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Undeniable Nick | Faith. Health. Fatherhood." />
+        <meta name="twitter:description" content="Faith. Health. Fatherhood. Helping men stay strong, athletic, and purposeful." />
+        <meta name="twitter:image" content="https://undeniablenick.com/hero-outdoor.png" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Nick Chiasson",
+          "alternateName": "Undeniable Nick",
+          "url": "https://undeniablenick.com",
+          "description": "Faith driven fitness and lifestyle coach helping men stay strong, athletic, and purposeful through kettlebell training and full-range movement.",
+          "knowsAbout": ["Kettlebell Training", "ATG Method", "Functional Fitness", "Faith", "Fatherhood"],
+          "sameAs": [
+            "https://www.instagram.com/undeniablenick",
+            "https://www.tiktok.com/@undeniablenick",
+            "https://www.youtube.com/@undeniablenick"
+          ]
+        })}</script>
       </Helmet>
 
       {/* NAV - transparent over hero */}
@@ -27,7 +51,6 @@ const Index = () => {
             <Link to="/about" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>About</Link>
             <Link to="/programs" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Programs</Link>
             <Link to="/coaching" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Coaching</Link>
-            <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-sm text-white/70 hover:text-white transition-colors" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}>Instagram</a>
           </nav>
           <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)} style={{ background: "none", border: "none", cursor: "pointer", padding: 8 }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M3 12h18M3 6h18M3 18h18"} /></svg>
@@ -40,7 +63,6 @@ const Index = () => {
               <Link to="/about" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>About</Link>
               <Link to="/programs" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Programs</Link>
               <Link to="/coaching" onClick={() => setMenuOpen(false)} className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Coaching</Link>
-              <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="text-white/70 text-lg" style={{ fontFamily: "'Inter', sans-serif" }}>Instagram</a>
             </nav>
           </div>
         )}
@@ -49,7 +71,7 @@ const Index = () => {
       <main>
         {/* HERO - Full bleed trail photo */}
         <section className="relative" style={{ minHeight: "100vh" }}>
-          <img src="/hero-outdoor.png" alt="Running through Louisiana pine forest at golden hour" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/hero-outdoor.webp" alt="Running through Louisiana pine forest at golden hour" fetchpriority="high" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/70" />
           <div className="relative z-10 flex flex-col items-center justify-end text-center px-5 pb-20" style={{ minHeight: "100vh" }}>
             <p className="text-white/60 uppercase text-sm mb-4 font-medium" style={{ letterSpacing: "0.3em" }}>Faith. Health. Fatherhood.</p>
@@ -75,7 +97,7 @@ const Index = () => {
         </section>
 
         {/* GARAGE GYM PHOTO */}
-        <section><img src="/garage-gym.png" alt="Garage gym with kettlebell, rings, and morning light" className="w-full" style={{ maxHeight: 500, objectFit: "cover" }} /></section>
+        <section><img src="/garage-gym.webp" alt="Garage gym with kettlebell, rings, and morning light" loading="lazy" decoding="async" width="1024" height="1024" className="w-full" style={{ maxHeight: 500, objectFit: "cover" }} /></section>
 
         {/* PILLARS */}
         <section className="section-pad bg-white">
@@ -99,7 +121,7 @@ const Index = () => {
         </section>
 
         {/* FAITH PHOTO */}
-        <section><img src="/faith-morning.png" alt="Morning porch with coffee, journal, and Louisiana trees" className="w-full" style={{ maxHeight: 500, objectFit: "cover" }} /></section>
+        <section><img src="/faith-morning.webp" alt="Morning porch with coffee, journal, and Louisiana trees" loading="lazy" decoding="async" width="1024" height="1024" className="w-full" style={{ maxHeight: 500, objectFit: "cover" }} /></section>
 
         {/* FAITH */}
         <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
@@ -115,7 +137,7 @@ const Index = () => {
 
         {/* CONSISTENCY - trail overlay */}
         <section className="relative" style={{ minHeight: 500 }}>
-          <img src="/trail-landscape.png" alt="Misty Louisiana trail at sunrise with Spanish moss" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="/trail-landscape.webp" alt="Misty Louisiana trail at sunrise with Spanish moss" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 flex items-center justify-center text-center px-5" style={{ minHeight: 500 }}>
             <div className="max-w-xl">

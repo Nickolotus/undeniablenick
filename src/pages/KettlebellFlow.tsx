@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const SardineFast = () => {
+const KettlebellFlow = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -17,7 +17,7 @@ const SardineFast = () => {
       const res = await fetch("https://tsglyyizwzapbyogdvhw.supabase.co/functions/v1/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, source: "sardine-fast" }),
+        body: JSON.stringify({ name, email, source: "kettlebell-flow" }),
       });
       if (res.ok) {
         setSubmitted(true);
@@ -34,28 +34,28 @@ const SardineFast = () => {
   return (
     <>
       <Helmet>
-        <title>The 5-Day Sardine Fast Guide | Undeniable Nick</title>
-        <meta name="description" content="Everything you need to know before starting a sardine fast. Day-by-day breakdown, nutrition facts, what to expect, and how to finish strong." />
-        <link rel="canonical" href="https://undeniablenick.com/programs/sardine-fast" />
+        <title>The 3-Day Kettlebell Flow | Undeniable Nick</title>
+        <meta name="description" content="A simple 3-day kettlebell program built for busy dads. One bell. Your garage. 45 minutes. Full body, full range, every session." />
+        <link rel="canonical" href="https://undeniablenick.com/programs/kettlebell-flow" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="The 5-Day Sardine Fast Guide | Undeniable Nick" />
-        <meta property="og:description" content="Day-by-day breakdown of the 5-day sardine fast. Nutrition facts, what to expect, and how to finish strong." />
-        <meta property="og:url" content="https://undeniablenick.com/programs/sardine-fast" />
-        <meta property="og:image" content="https://undeniablenick.com/program-sardine.png" />
+        <meta property="og:title" content="The 3-Day Kettlebell Flow | Undeniable Nick" />
+        <meta property="og:description" content="One bell. Your garage. 45 minutes. A simple 3-day kettlebell flow program for busy men." />
+        <meta property="og:url" content="https://undeniablenick.com/programs/kettlebell-flow" />
+        <meta property="og:image" content="https://undeniablenick.com/program-kettlebell.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The 5-Day Sardine Fast Guide | Undeniable Nick" />
-        <meta name="twitter:description" content="Day-by-day breakdown of the 5-day sardine fast. Free guide." />
-        <meta name="twitter:image" content="https://undeniablenick.com/program-sardine.png" />
+        <meta name="twitter:title" content="The 3-Day Kettlebell Flow | Undeniable Nick" />
+        <meta name="twitter:description" content="One bell. Your garage. 45 minutes. Free program." />
+        <meta name="twitter:image" content="https://undeniablenick.com/program-kettlebell.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CreativeWork",
-          "name": "The 5-Day Sardine Fast Guide",
+          "name": "The 3-Day Kettlebell Flow",
           "author": { "@type": "Person", "name": "Nick Chiasson" },
           "publisher": { "@type": "Person", "name": "Nick Chiasson", "url": "https://undeniablenick.com" },
-          "url": "https://undeniablenick.com/programs/sardine-fast",
+          "url": "https://undeniablenick.com/programs/kettlebell-flow",
           "inLanguage": "en",
           "isAccessibleForFree": true,
-          "genre": "Nutrition"
+          "genre": "Fitness"
         })}</script>
       </Helmet>
 
@@ -95,12 +95,13 @@ const SardineFast = () => {
       <main>
         {/* HERO */}
         <section style={{ position: "relative", padding: "80px 20px", textAlign: "center", overflow: "hidden" }}>
-          <img src="/program-sardine.webp" alt="Sardines in tin" fetchpriority="high" decoding="async" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
-          <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(20,15,10,0.75)" }} />
+          <img src="/program-kettlebell.webp" alt="Kettlebell in garage gym" fetchpriority="high" decoding="async" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+          <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(20,15,10,0.72)" }} />
           <div className="max-w-2xl mx-auto" style={{ position: "relative", zIndex: 1 }}>
-            <h1 className="text-white mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 5-Day Sardine Fast Guide</h1>
+            <p className="text-white/70 uppercase text-sm mb-4 font-medium" style={{ letterSpacing: "0.3em" }}>Free Program</p>
+            <h1 className="text-white mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 3-Day Kettlebell Flow</h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Everything you need to know before, during, and after a sardine fast. Day-by-day breakdown, the science behind it, and real results.
+              One bell. Your garage. 45 minutes. Full body, full range, every session. Built for men with jobs, kids, and limited time.
             </p>
           </div>
         </section>
@@ -111,12 +112,12 @@ const SardineFast = () => {
             <h2 className="text-center mb-10" style={{ color: "#2D4A3E" }}>What's Inside</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { title: "Day-by-Day Breakdown", desc: "What happens in your body on each day of the fast, from glycogen depletion to ketosis to visible changes." },
-                { title: "The Science", desc: "Omega-3 levels, selenium, B12, taurine, brown fat activation. Based on Dr. Berg's research and clinical data." },
-                { title: "What to Buy", desc: "Which sardines to get, what electrolytes you need, and how to prep before Day 1." },
-                { title: "Per-Can Nutrition", desc: "23g protein, 900mg omega-3, 348% B12 per can. Full breakdown of what 3 cans a day gives you." },
-                { title: "What to Expect", desc: "Dopamine hunger, mental clarity, energy shifts, and how to push through the wall." },
-                { title: "How to Come Off", desc: "How to transition back to normal eating without losing the benefits." },
+                { title: "Day 1: Foundation Flow", desc: "Swings, goblet squats, halos. The three movements every man should own before anything else. 45 minutes, moderate load." },
+                { title: "Day 2: Press & Pull", desc: "Cleans, presses, rows. Upper body strength with full-range mobility built into every rep. Garage-gym tested." },
+                { title: "Day 3: Flow Under Load", desc: "Get-up and snatch complex. Total-body integration. The session that turns strength into athletic capacity." },
+                { title: "One Bell, One Bag", desc: "What size to buy, where to get it, and how to train full-body with nothing else. No gym, no commute, no excuses." },
+                { title: "Warm-Up & Mobility", desc: "The 8-minute ramp-up I run before every session. Protects the joints, primes the pattern, keeps you training for decades." },
+                { title: "How to Progress", desc: "How to know when to go heavier, when to add volume, and when to back off. Built for longevity, not burnout." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: "#D4943A", flexShrink: 0, marginTop: 6 }} />
@@ -130,14 +131,27 @@ const SardineFast = () => {
           </div>
         </section>
 
-        {/* EMAIL CAPTURE */}
+        {/* WHO IT'S FOR */}
         <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
+          <div className="max-w-3xl mx-auto px-5">
+            <h2 className="mb-8 text-center" style={{ color: "#2D4A3E" }}>Built for Men Who...</h2>
+            <div className="flex flex-col gap-4 leading-relaxed" style={{ color: "#5A4A3A" }}>
+              <p>Want real strength without the gym membership, commute, or the circus around it.</p>
+              <p>Have 45 minutes, a garage, and a family that needs them to show up.</p>
+              <p>Want to stay athletic at 40, 50, and 60. Not just look good in a mirror at 30.</p>
+              <p>Are tired of cookie-cutter programs that don't fit real life.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* EMAIL CAPTURE */}
+        <section className="section-pad bg-white">
           <div className="max-w-md mx-auto px-5 text-center">
             {!submitted ? (
               <>
-                <h2 className="mb-4" style={{ color: "#2D4A3E" }}>Get the Free Guide</h2>
+                <h2 className="mb-4" style={{ color: "#2D4A3E" }}>Get the Free Program</h2>
                 <p className="text-sm mb-8 leading-relaxed" style={{ color: "#5A4A3A" }}>
-                  Enter your email and the guide goes straight to your inbox.
+                  Enter your email and the full 3-day flow goes straight to your inbox.
                 </p>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   <input
@@ -181,17 +195,16 @@ const SardineFast = () => {
                       opacity: isSubmitting ? 0.6 : 1,
                     }}
                   >
-                    {isSubmitting ? "Sending..." : "Send Me the Guide"}
+                    {isSubmitting ? "Sending..." : "Send Me the Program"}
                   </button>
                   <p className="text-xs" style={{ color: "#999" }}>No spam. Unsubscribe anytime.</p>
                 </form>
               </>
             ) : (
               <>
-                <span style={{ fontSize: "48px", display: "block", marginBottom: "16px" }}>🎉</span>
                 <h2 className="mb-4" style={{ color: "#2D4A3E" }}>Check Your Inbox</h2>
                 <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>
-                  The 5-Day Sardine Fast Guide is on its way to {email}. If you don't see it in a few minutes, check your spam folder.
+                  The 3-Day Kettlebell Flow is on its way to {email}. If you don't see it in a few minutes, check your spam folder.
                 </p>
                 <Link to="/programs" className="btn-golden mt-6 inline-block" style={{ padding: "12px 24px" }}>
                   Browse More Resources
@@ -204,8 +217,8 @@ const SardineFast = () => {
         {/* FOLLOW CTA */}
         <section className="section-pad" style={{ backgroundColor: "#2D4A3E" }}>
           <div className="max-w-2xl mx-auto px-5 text-center">
-            <h2 className="text-white mb-5">Follow the Sardine Fast Series</h2>
-            <p className="text-white/80 text-lg mb-8">I'm documenting all 5 days on Instagram. Watch it happen in real time.</p>
+            <h2 className="text-white mb-5">Watch the Sessions</h2>
+            <p className="text-white/80 text-lg mb-8">I'm filming every session in the garage and posting the flows on Instagram. Come train alongside.</p>
             <a href="https://www.instagram.com/undeniablenick" target="_blank" rel="noopener noreferrer" className="btn-golden text-lg">Follow @undeniablenick</a>
           </div>
         </section>
@@ -234,5 +247,5 @@ const SardineFast = () => {
   );
 };
 
-export { SardineFast as Component };
-export default SardineFast;
+export { KettlebellFlow as Component };
+export default KettlebellFlow;

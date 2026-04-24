@@ -17,8 +17,6 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  ssr: {
-    noExternal: ["react-helmet-async"],
+    dedupe: ["react", "react-dom", "react-helmet-async"],
   },
 }));
