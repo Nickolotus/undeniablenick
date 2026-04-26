@@ -34,22 +34,22 @@ const KettlebellFlow = () => {
   return (
     <>
       <Helmet>
-        <title>The 3-Day Kettlebell Flow | Undeniable Nick</title>
-        <meta name="description" content="A simple 3-day kettlebell program built for busy dads. One bell. Your garage. 45 minutes. Full body, full range, every session." />
+        <title>The 3-Day Kettlebell Beginner Program | Undeniable Nick</title>
+        <meta name="description" content="The 3-day kettlebell beginner program. One bell. Your garage. 45 minutes. The foundation a real practice is built on. Run it for 4 weeks." />
         <link rel="canonical" href="https://undeniablenick.com/programs/kettlebell-flow" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="The 3-Day Kettlebell Flow | Undeniable Nick" />
-        <meta property="og:description" content="One bell. Your garage. 45 minutes. A simple 3-day kettlebell flow program for busy men." />
+        <meta property="og:title" content="The 3-Day Kettlebell Beginner Program | Undeniable Nick" />
+        <meta property="og:description" content="One bell. Your garage. 45 minutes. The foundation a real practice is built on." />
         <meta property="og:url" content="https://undeniablenick.com/programs/kettlebell-flow" />
         <meta property="og:image" content="https://undeniablenick.com/program-kettlebell.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The 3-Day Kettlebell Flow | Undeniable Nick" />
-        <meta name="twitter:description" content="One bell. Your garage. 45 minutes. Free program." />
+        <meta name="twitter:title" content="The 3-Day Kettlebell Beginner Program | Undeniable Nick" />
+        <meta name="twitter:description" content="One bell. Your garage. 45 minutes. Free starter program." />
         <meta name="twitter:image" content="https://undeniablenick.com/program-kettlebell.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CreativeWork",
-          "name": "The 3-Day Kettlebell Flow",
+          "name": "The 3-Day Kettlebell Beginner Program",
           "author": { "@type": "Person", "name": "Nick Chiasson" },
           "publisher": { "@type": "Person", "name": "Nick Chiasson", "url": "https://undeniablenick.com" },
           "url": "https://undeniablenick.com/programs/kettlebell-flow",
@@ -99,9 +99,9 @@ const KettlebellFlow = () => {
           <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(20,15,10,0.72)" }} />
           <div className="max-w-2xl mx-auto" style={{ position: "relative", zIndex: 1 }}>
             <p className="text-white/70 uppercase text-sm mb-4 font-medium" style={{ letterSpacing: "0.3em" }}>Free Program</p>
-            <h1 className="text-white mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 3-Day Kettlebell Flow</h1>
+            <h1 className="text-white mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>The 3-Day Kettlebell Beginner Program</h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              One bell. Your garage. 45 minutes. Full body, full range, every session. Built for men with jobs, kids, and limited time.
+              One bell. Your garage. 45 minutes. The foundation a real practice is built on. Run it for 4 weeks.
             </p>
           </div>
         </section>
@@ -112,12 +112,12 @@ const KettlebellFlow = () => {
             <h2 className="text-center mb-10" style={{ color: "#2D4A3E" }}>What's Inside</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { title: "Day 1: Foundation Flow", desc: "Swings, goblet squats, halos. The three movements every man should own before anything else. 45 minutes, moderate load." },
-                { title: "Day 2: Press & Pull", desc: "Cleans, presses, rows. Upper body strength with full-range mobility built into every rep. Garage-gym tested." },
-                { title: "Day 3: Flow Under Load", desc: "Get-up and snatch complex. Total-body integration. The session that turns strength into athletic capacity." },
-                { title: "One Bell, One Bag", desc: "What size to buy, where to get it, and how to train full-body with nothing else. No gym, no commute, no excuses." },
-                { title: "Warm-Up & Mobility", desc: "The 8-minute ramp-up I run before every session. Protects the joints, primes the pattern, keeps you training for decades." },
-                { title: "How to Progress", desc: "How to know when to go heavier, when to add volume, and when to back off. Built for longevity, not burnout." },
+                { title: "Day 1: Foundation", desc: "Swings, goblet squats, push-ups, rows, halos. The patterns every man should own first. 45 minutes." },
+                { title: "Day 2: Strength", desc: "Floor press, rows, split squats, RDLs, strict press, curls. Heavier loads, fewer reps, longer rest. The day you push the bell." },
+                { title: "Day 3: Flow", desc: "A real kettlebell flow. Movements linked back-to-back without setting the bell down. Endurance, grip, and integration." },
+                { title: "One Bell, Done Right", desc: "What size to buy, where to get it, how to train full-body with nothing else. No gym, no commute." },
+                { title: "10-Minute Warm-Up", desc: "The same warm-up before every session. Tibialis prep, hip mobility, T-spine. Protects the joints, primes the patterns." },
+                { title: "Train With Intention", desc: "Why effort beats prescribed reps every time. The mindset that turns a basic program into real adaptation." },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div style={{ width: 8, height: 8, borderRadius: "50%", backgroundColor: "#D4943A", flexShrink: 0, marginTop: 6 }} />
