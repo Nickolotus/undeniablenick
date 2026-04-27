@@ -3,3 +3,4 @@ dist/
 .vite-react-ssg-temp/
 chiassonconsulting-repo/
 .claude/
+supabase/.temp/
