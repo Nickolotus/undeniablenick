@@ -33,6 +33,10 @@ export const routes: RouteRecord[] = [
         lazy: () => import("./pages/KettlebellFlow"),
       },
       {
+        path: "programs/dragon-squat",
+        lazy: () => import("./pages/DragonSquat"),
+      },
+      {
         path: "*",
         lazy: () => import("./pages/NotFound"),
       },

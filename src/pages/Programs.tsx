@@ -106,6 +106,24 @@ const Programs = () => {
                 </div>
               </Link>
 
+              {/* DRAGON SQUAT GUIDE */}
+              <Link to="/programs/dragon-squat" className="block rounded-lg overflow-hidden hover:shadow-lg transition-shadow" style={{ border: "none" }}>
+                <div style={{ position: "relative", overflow: "hidden", height: "220px" }}>
+                  <img src="/garage-gym.webp" alt="Dragon Squat training in garage" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%)" }} />
+                  <div style={{ position: "absolute", bottom: "20px", left: "24px", right: "24px" }}>
+                    <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 600, letterSpacing: "3px", textTransform: "uppercase", color: "#D4943A", marginBottom: "8px" }}>Free Guide</p>
+                    <h3 className="text-white" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", lineHeight: 1.3 }}>Dragon Squat Progression</h3>
+                  </div>
+                </div>
+                <div style={{ padding: "20px 24px", backgroundColor: "#fff" }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>
+                    The full progression with real intermediate steps between every phase. Multi-creator synthesis. 3 to 6 month build.
+                  </p>
+                  <p className="mt-4 text-sm font-bold" style={{ color: "#D4943A" }}>Download Free Guide &rarr;</p>
+                </div>
+              </Link>
+
             </div>
           </div>
         </section>
