@@ -44,6 +44,20 @@ const LEAD_MAGNETS: Record<string, {
       "Whole-food nutrition framework (no calorie tracking)",
     ],
   },
+  "dragon-squat": {
+    pdfFilename: "Dragon-Squat-Guide.pdf",
+    campaign: "dragon-squat-pdf",
+    subject: "Your Dragon Squat Progression Guide",
+    heroTitle: "Your Dragon Squat Guide",
+    intro: "Here is your full Dragon Squat progression. The 5-phase path with real intermediate progressions for every gap, synthesized from research across multiple coaches.",
+    bullets: [
+      "The 5-phase path from Tail Lift to full Dragon Squat",
+      "Phase Bridges: real intermediate progressions for every gap",
+      "Prerequisite tests so you know where to start",
+      "Daily 8 to 10 minute mobility prep routine",
+      "Realistic 3 to 6 month timeline with the gate to move up",
+    ],
+  },
 };
 
 const DEFAULT_SOURCE = "sardine-fast";
