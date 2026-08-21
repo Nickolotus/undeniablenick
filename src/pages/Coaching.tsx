@@ -8,11 +8,11 @@ const Coaching = () => {
     <>
       <Helmet>
         <title>Coaching | Undeniable Nick</title>
-        <meta name="description" content="One-on-one coaching built around simplicity, consistency, and long-term health. Kettlebell training, full-range movement, and programming that fits your life." />
+        <meta name="description" content="Twelve week coaching blocks. A custom program built around the equipment you own and the injuries you have, delivered in an app and adjusted weekly from what you actually lifted." />
         <link rel="canonical" href="https://undeniablenick.com/coaching" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Coaching | Undeniable Nick" />
-        <meta property="og:description" content="One-on-one coaching built around simplicity, consistency, and long-term health. Kettlebell training, full-range movement, and programming that fits your life." />
+        <meta property="og:description" content="Twelve week coaching blocks. A custom program built around the equipment you own and the injuries you have, delivered in an app and adjusted weekly from what you actually lifted." />
         <meta property="og:url" content="https://undeniablenick.com/coaching" />
         <meta property="og:image" content="https://undeniablenick.com/garage-gym.png" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -26,9 +26,9 @@ const Coaching = () => {
           "serviceType": "Fitness and Lifestyle Coaching",
           "provider": { "@type": "Person", "name": "Nick Chiasson", "url": "https://undeniablenick.com" },
           "areaServed": "Online",
-          "description": "One-on-one fitness and lifestyle coaching focused on kettlebell training, joint health, ATG methodology, and sustainable programming for busy men.",
+          "description": "One-on-one fitness coaching in twelve week blocks. Custom programming built around your equipment, injuries, and schedule, delivered through a training app and adjusted weekly from your logged sets.",
           "url": "https://undeniablenick.com/coaching",
-          "offers": { "@type": "Offer", "url": "https://calendar.app.google/CALdRhi6DesHTxi4A", "availability": "https://schema.org/InStock" }
+          "offers": { "@type": "Offer", "name": "The Twelve Week Block", "price": "600", "priceCurrency": "USD", "url": "https://calendar.app.google/CALdRhi6DesHTxi4A", "availability": "https://schema.org/LimitedAvailability" }
         })}</script>
       </Helmet>
 
@@ -139,15 +139,34 @@ const Coaching = () => {
           </div>
         </section>
 
+        {/* WHAT YOU ARE PAYING FOR */}
+        <section className="bg-white section-pad">
+          <div className="max-w-3xl mx-auto px-5">
+            <h2 className="mb-8 text-center" style={{ color: "#2D4A3E" }}>A Program Is Not the Hard Part</h2>
+            <div className="flex flex-col gap-6 leading-relaxed" style={{ color: "#5A4A3A" }}>
+              <p>
+                You can buy a program for fifty dollars. Some of them are good. The problem is that a program written for nobody in particular assumes you own the equipment, assumes nothing hurts, and assumes you will actually do it.
+              </p>
+              <p>
+                Most people do not fail because the program was wrong. They fail because it did not fit. The gym closes before you get there. The knee only hurts going down stairs. There is one kettlebell in the garage and no rack. Week three lands on a work trip.
+              </p>
+              <p style={{ color: "#2D4A3E", fontWeight: 600 }}>
+                That is what you are paying for. Not the exercises. The fit, and someone actually checking.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* HOW IT WORKS */}
         <section className="bg-white section-pad">
           <div className="max-w-4xl mx-auto px-5">
             <h2 className="mb-10 text-center" style={{ color: "#2D4A3E" }}>How It Works</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {[
-                { step: "Step 1", title: "Intake Call", body: "A no-pressure conversation. We talk training history, goals, injuries, and schedule. If it is not a fit, I will tell you." },
-                { step: "Step 2", title: "Built for You", body: "I design programming around your life. Kettlebell flows, joint work, mobility, and nutrition guidance — all tied together." },
-                { step: "Step 3", title: "Stay Accountable", body: "Weekly check-ins. Programming that adapts as life changes. You do the reps. I keep the plan honest." },
+                { step: "Step 1", title: "Intake Call", body: "Forty five minutes. Your equipment, your injuries, what currently hurts, how many mornings you will genuinely hold, and what you hate doing. If it is not a fit, I will tell you on the call." },
+                { step: "Step 2", title: "Built Around You", body: "Your program is written for the equipment you own and the days you actually have. Nothing in it needs a gym you do not go to or a movement your shoulder will not give you." },
+                { step: "Step 3", title: "On Your Phone", body: "Your program lives in an app you add to your home screen. Today's session, your loads, your targets. Log the set and it tells you when you have earned more weight." },
+                { step: "Step 4", title: "Adjusted Weekly", body: "I see what you actually lifted, not what you meant to lift. The programming changes off real numbers every week for twelve weeks." },
               ].map((s) => (
                 <div key={s.step} className="text-center">
                   <p className="uppercase text-xs font-semibold mb-3" style={{ color: "#D4943A", letterSpacing: "0.2em" }}>{s.step}</p>
@@ -159,6 +178,44 @@ const Coaching = () => {
           </div>
         </section>
 
+        {/* THE OFFER */}
+        <section className="section-pad" style={{ backgroundColor: "#F5EFE0" }}>
+          <div className="max-w-3xl mx-auto px-5">
+            <div className="rounded-lg" style={{ backgroundColor: "#FFFFFF", padding: "44px 32px", borderTop: "4px solid #D4943A" }}>
+              <p className="uppercase text-xs font-semibold mb-3 text-center" style={{ color: "#D4943A", letterSpacing: "0.25em" }}>The Offer</p>
+              <h2 className="mb-4 text-center" style={{ color: "#2D4A3E" }}>The Twelve Week Block</h2>
+              <p className="text-center mb-8" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "3rem", fontWeight: 600, color: "#2D4A3E", lineHeight: 1 }}>
+                $600
+              </p>
+              <ul className="flex flex-col gap-4 mb-8 max-w-xl mx-auto">
+                {[
+                  "A forty five minute intake call, on the phone, with me.",
+                  "A program built around your equipment, your injuries, and your real schedule.",
+                  "The training app on your phone for the full block.",
+                  "Weekly adjustments based on the loads and reps you actually logged.",
+                  "Direct access when something comes up mid week.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-4" style={{ color: "#5A4A3A" }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: 2 }} aria-hidden="true">
+                      <circle cx="12" cy="12" r="11" fill="#2D4A3E" />
+                      <path d="M7 12.5l3 3 7-7" stroke="#D4943A" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                    </svg>
+                    <span className="leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="max-w-xl mx-auto flex flex-col gap-4 leading-relaxed text-sm" style={{ color: "#5A4A3A" }}>
+                <p>
+                  Twelve weeks, not a subscription. A defined start and a defined finish, so you know exactly what you are committing to and so do I. If you want to run another block at the end, we run another block.
+                </p>
+                <p>
+                  I take four people at a time. That is not a marketing tactic. Programming for someone properly takes hours every week, and four is what I can carry without it getting thin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* COACHING CALL CTA */}
         <section className="section-pad" style={{ backgroundColor: "#2D4A3E" }}>
           <div className="max-w-3xl mx-auto px-5">
@@ -166,7 +223,7 @@ const Coaching = () => {
               <p className="uppercase text-xs font-semibold mb-3" style={{ color: "#D4943A", letterSpacing: "0.25em" }}>Next Step</p>
               <h2 className="mb-5" style={{ color: "#2D4A3E" }}>Request a Coaching Call</h2>
               <p className="mb-8 leading-relaxed text-lg max-w-xl mx-auto" style={{ color: "#5A4A3A" }}>
-                A one-on-one conversation to understand your training background, goals, and schedule. Free, no-pressure, 20 minutes. We figure out what works and build from there.
+                Free, twenty minutes, no pressure. We work out whether a block makes sense for you before either of us commits to anything. If it does not, I will say so.
               </p>
               <a href="https://calendar.app.google/CALdRhi6DesHTxi4A" target="_blank" rel="noopener noreferrer" className="btn-golden text-lg">
                 Book a Call
