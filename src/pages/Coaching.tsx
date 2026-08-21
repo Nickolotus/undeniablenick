@@ -199,8 +199,8 @@ const Coaching = () => {
                 <ul className="flex flex-col gap-3 mt-7">
                   {[
                     "No App Store, no download, no account to create.",
-                    "Built for one hand in a dark garage at 4 AM.",
-                    "The rest timer buzzes. It never makes a sound.",
+                    "Log a set in two taps, between sets, without breaking your head out of it.",
+                    "A rest timer that buzzes instead of beeping, so it never makes a sound.",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm" style={{ color: "rgba(245,239,224,0.75)" }}>
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: 2 }} aria-hidden="true">
