@@ -4,3 +4,4 @@ dist/
 chiassonconsulting-repo/
 .claude/
 supabase/.temp/
+.netlify/
