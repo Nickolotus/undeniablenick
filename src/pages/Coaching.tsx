@@ -73,7 +73,7 @@ const Coaching = () => {
           <div className="relative z-10 flex items-center" style={{ minHeight: 420 }}>
             <div className="max-w-3xl mx-auto px-5 w-full">
               <p className="text-white/70 uppercase text-sm mb-4 font-medium" style={{ letterSpacing: "0.3em" }}>Coaching</p>
-              <h1 className="text-white mb-5" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, textShadow: "0 2px 20px rgba(0,0,0,0.4)" }}>
+              <h1 className="text-white mb-5" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: "clamp(2.1rem, 4.4vw, 3.3rem)", lineHeight: 1.1, textShadow: "0 2px 20px rgba(0,0,0,0.4)" }}>
                 Train like your life depends on it.<br />Because it does.
               </h1>
               <p className="text-white/85 text-lg leading-relaxed max-w-2xl">
@@ -174,6 +174,55 @@ const Coaching = () => {
                   <p className="text-sm leading-relaxed" style={{ color: "#5A4A3A" }}>{s.body}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* THE APP */}
+        <section className="section-pad" style={{ backgroundColor: "#2D4A3E" }}>
+          <div className="max-w-5xl mx-auto px-5">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="uppercase text-xs font-semibold mb-3" style={{ color: "#D4943A", letterSpacing: "0.25em" }}>Included</p>
+                <h2 className="mb-5" style={{ color: "#F5EFE0" }}>Your Program, On Your Phone</h2>
+                <div className="flex flex-col gap-5 leading-relaxed" style={{ color: "rgba(245,239,224,0.8)" }}>
+                  <p>
+                    Not a PDF you open once and lose in your downloads. Your program lives on your home screen. Open it and today's session is already there, with your movements, your loads, and the rep target you are chasing.
+                  </p>
+                  <p>
+                    Log a set as you finish it. The app knows your rep range, so it tells you when you have earned more weight and when to hold. That decision stops being a guess.
+                  </p>
+                  <p>
+                    It works with no signal, because garages do not have any. And I see what you actually lifted, which is what makes the weekly adjustment worth anything.
+                  </p>
+                </div>
+                <ul className="flex flex-col gap-3 mt-7">
+                  {[
+                    "No App Store, no download, no account to create.",
+                    "Built for one hand in a dark garage at 4 AM.",
+                    "The rest timer buzzes. It never makes a sound.",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm" style={{ color: "rgba(245,239,224,0.75)" }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: 2 }} aria-hidden="true">
+                        <circle cx="12" cy="12" r="11" fill="#D4943A" />
+                        <path d="M7 12.5l3 3 7-7" stroke="#2D4A3E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                      </svg>
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="/training-app.png"
+                  alt="The training app on a phone, showing a logged set of ring dips and the prompt telling you whether to add weight"
+                  loading="lazy"
+                  decoding="async"
+                  width={390}
+                  height={844}
+                  style={{ width: "100%", maxWidth: 300, height: "auto", borderRadius: 22, border: "1px solid rgba(245,239,224,0.18)", boxShadow: "0 24px 60px rgba(0,0,0,0.45)" }}
+                />
+              </div>
             </div>
           </div>
         </section>
